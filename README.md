@@ -2,6 +2,13 @@
 
 Simple web application, which lets the authenticated users to post own code snippets and comment other posts. 
 
+## Description and user guide
+On the main screen you can see the list of posts which is rederd from the database. Viewing the posts is available for everyone.
+Registered users are able to create ownpostas, after login, on the button CREATE POST. If you want to comment the post, click to the title of desirable post, it will open the forf for adding the comment. After adding your comment, it will appear in the list of comments  with your credentials and a time stamp, provided by server. After adding your comment, you can immediately add another ones, or go back to the main page, where your comments will be also visible under the post you commented. 
+
+Design of posts and pages will be improved, so it is not a final look. 
+                (✿◡‿◡) Thanks for using the app. 
+
 
 ## Features
 - [x] Authentication and Authorization (includes Email verification)
