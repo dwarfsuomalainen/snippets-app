@@ -1,6 +1,8 @@
-# snippets-app
+# Snippets Webapp
 
-in progress
+Simple web application, which lets the authenticated users to post own code snippets and comment other posts. 
+
+
 ## Features
 - [x] Authentication and Authorization (includes Email verification)
 - [x] Create Question
@@ -12,12 +14,34 @@ in progress
 - [ ] Search Question - in future versions
 - [ ] Forgot password - in future versions
 - [ ] Upvote Downvote comments - in future versions
-- [ ] Two-factor authentication
 - [ ] OAuth login with Google, Facebook, and Github - in future versions
 
 
-## Prerequisite
-+ Node.js
+## Used instruments 
+
+## Implementation of backend with Node.js
++ Express framework
+
+## Utilization of database
++ MongoDB
+
+## Authentication
++ Users are able to register and login
++ JWT authorization
++ Only authenticated users can post, comment 
+
+## Features
+    Authenticated users can:
++ Post new code snippets and text descriptions
++ Comment on existing posts
++ Non-authenticated users can see posts, comments
++ Date/time of comments and user email on the comments
++ Pagination
++ Uploading screenshots
+
+## Responsive design
++ Materialize
+
 
 ## Env Variables
 Edit a .env file in root folder
@@ -41,7 +65,7 @@ npm start
 
 
 
-ᓚᘏᗢ Now all set <a href="http://localhost:1234/">http://localhost:1234/</a> URL and see your application up and running.
+ᓚᘏᗢ Now all set  go to <a href="http://localhost:1234/">http://localhost:1234/</a> URL and see your application up and running.
 
 ## License
 
