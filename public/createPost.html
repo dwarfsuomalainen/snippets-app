@@ -1,70 +1,96 @@
 <!DOCTYPE html>
 <html>
+  <head> </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stylesheets/style.css" />
+  <!-- Compiled and minified CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+  />
 
-<head>
-    
-</head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="stylesheets/style.css"/>
-<!-- Compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<body>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <body>
     <div class="createPost">
-    <input type="text" id="name-text" name="name" placeholder="Enter title of your post">
-    <label for="name-text">New post title</label>
-    <h4>Your code snippet</h4>
-    <div class="row">
-          <form class="col s12">
-              <div class="row">
-              <div class="input-field col s12" id="addIng">
-                <textarea id="ingredients-text" name="ingredients" class="ing-newline0"class="materialize-textarea"  data-length="10000"></textarea>
-                <label for="ingredients-text"> Enter code snippet</label>
-              </div>
+      <input
+        type="text"
+        id="name-text"
+        name="name"
+        placeholder="Enter title of your post"
+      />
+      <label for="name-text">New post title</label>
+      <h4>Your code snippet</h4>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12" id="addIng">
+              <textarea
+                id="ingredients-text"
+                name="ingredients"
+                class="ing-newline0"
+                class="materialize-textarea"
+                data-length="10000"
+              ></textarea>
+              <label for="ingredients-text"> Enter code snippet</label>
             </div>
-            </form>
-        <button class="btn" id="add-ingredient" type="button">Save snippet</button>
-      
-    <h4>Describe your issue or solution</h4>
-    <div class="row">
-          <form class="col s12">
-              <div class="row">
-              <div class="input-field col s12" id="addInst">
-                <textarea id="instructions-text" name="instructions" class="ins-newline0" class="materialize-textarea" data-length="100000"></textarea>
-                <label for="instructions-text">Enter your message</label>
-              </div>
+          </div>
+        </form>
+        <button class="btn" id="add-ingredient" type="button">
+          Save snippet
+        </button>
+      </div>
+      <h4>Describe your issue or solution</h4>
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12" id="addInst">
+              <textarea
+                id="instructions-text"
+                name="instructions"
+                class="ins-newline0"
+                class="materialize-textarea"
+                data-length="100000"
+              ></textarea>
+              <label for="instructions-text">Enter your message</label>
             </div>
-            </form>
-        <button class="btn" id="add-instruction" type="button">Save message</button>
-    
-    </form>
+          </div>
+        </form>
+        <button class="btn" id="add-instruction" type="button">
+          Save message
+        </button>
+      </div>
 
-
-            <div class="file-field-input">
-                <h4>Add a screenshot</h4>
-                <label for="camera-file-input"></label><br><br><br>
-              <div class="btn">
-                <form action="/images/" method="POST" multiple enctype="multipart/form-data">
-                <label for="camera-file-input">
-                  <input type="file" id="camera-file-input"accept="image/png, image/jpeg" multiple name="camera-file-input">              
-                </label>
-            </form>            
-              </div>
-            </div>
+      <div class="file-field-input">
+        <h4>Add a screenshot</h4>
+        <label for="camera-file-input"></label><br /><br /><br />
+        <div class="btn">
+          <form
+            action="/images/"
+            method="POST"
+            multiple
+            enctype="multipart/form-data"
+          >
+            <label for="camera-file-input">
+              <input
+                type="file"
+                id="camera-file-input"
+                accept="image/png, image/jpeg"
+                multiple
+                name="camera-file-input"
+              />
+            </label>
           </form>
-  <br>
-<div id="chkDiv" class="checkboxes"> 
-<label for="catForm ">Categories</label>
-<form id="catForm" name="Categories">
-</form>
-</div>
-    <br><br><br>
-    <button class="btn" id="submit" type="submit" >Submit</button>
-</div>
-</div>
-
-</body>
-<script src="./javascripts/recipe.js"></script>
+        </div>
+      </div>
+      <br />
+      <div id="chkDiv" class="checkboxes">
+        <label for="catForm ">Categories</label>
+        <form id="catForm" name="Categories"></form>
+      </div>
+      <br /><br /><br />
+      <button class="btn" id="submit" type="submit">Submit</button>
+    </div>
+  </body>
+  <script src="./javascripts/recipe.js"></script>
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="stylesheets/style.css" />
+  <!-- Compiled and minified CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+  />
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <body>
+    <div id="post"></div>
+    <div class="comments-container">
+      <h4>Comments</h4>
+      <div class="comments" id="comments"></div>
+    </div>
+    <div>
+      <h4>Leave a comment</h4>
+      <div class="row">
+        <form id="comment-form" class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea
+                id="comment"
+                name="comment"
+                class="ins-newline0"
+                class="materialize-textarea"
+                data-length="100000"
+              ></textarea>
+              <label for="comment">Enter your comment</label>
+            </div>
+          </div>
+          <button class="btn" type="submit">Post comment</button>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./javascripts/view-recipe.js"></script>
+</html>
