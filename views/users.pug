@@ -1,0 +1,14 @@
+block content
+  h1 List of users
+  table
+    tr 
+      th #
+      th ID 
+      th Email  
+      th Password
+    each user, index in users 
+      tr 
+        td= index 
+        td= user["id"]
+        td= user["email"]
+        td= user["password"]

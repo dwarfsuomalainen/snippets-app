@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 Login
+  div(id="error" class="card-panel")
+  form(action="" id="login-form" method="POST")
+    label(for="email") Email 
+    input(type="email" name="email" id="email" required)
+    label(for="password") Password 
+    input(type="password" name="password" id="password" required)
+    button(class="btn" type="submit") Login
+  script(src="/javascripts/login.js")

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylesheets/style.css"/>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<body>
+    
+    <h1>Index page</h1>
+    <nav>
+        <div class="nav-wrapper>
+          <a href="/" class="brand-logo">Snippets app</applet></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <nav>
+              <div class="nav-wrapper">
+                <form id="forfSearch">
+                  <div class="input-field">
+                    <input id="search" type="search" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                  </div>
+                </form>
+              </div>
+            </nav>
+            <!-- <li><a href="">Recipe 1</a></li>
+            <li><a href="">Recipe 2</a></li>
+            <li><a href="">Recipe 3</a></li>-->
+          </ul>
+        </div>
+      </nav>
+    <br><br><br><br>
+    <div id="links" class="links">
+   <a href="/login.html"> Login </a>
+   <a href="/register.html"> Register</a>
+
+   </div>
+   
+   <div id="buttonLogout" class="hidden">
+    
+   <input type="button" id="logout" value="logout"/>
+   <input type="button" onclick="location.href='/createPost.html';" value="Create post" />
+
+
+
+   
+   <br><br><br>
+   <div id="displayEmail"></div>
+   <br>
+   <label for="add-item"> Add item </label>
+        <br>
+        <input type="text"  name="add-item" id="add-item"/>
+        <br>
+        <div id="listOfItems"></div>
+      
+        
+    </div>
+
+    <br><br><br><br>
+    <div id="posts"></div>
+    <br><br><br><br>
+
+  <ul class="pagination">
+    <li class="disabled"><a href="#!"><i class="material-icons"></i></a></li>
+    <li class="active"><a href="#!">1</a></li>
+    <li class="waves-effect"><a href="#!">2</a></li>
+    <li class="waves-effect"><a href="#!">3</a></li>
+    <li class="waves-effect"><a href="#!">4</a></li>
+    <li class="waves-effect"><a href="#!">5</a></li>
+    <li class="waves-effect"><a href="#!"><i class="material-icons"></i></a></li>
+  </ul>
+</body>
+
+
+</html>
+<script type="text/javascript" src="javascripts/index.js"></script>
+<script type="text/javascript" src="javascripts/posts.js"></script>
+<script src="./javascripts/recipe.js"></script>
