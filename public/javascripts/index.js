@@ -14,7 +14,7 @@ function initializeCodeIndex() {
     window.localStorage.removeItem("auth_token");
     window.location.reload();
   });
-  let textareaIndex = document.getElementById("add-item");
+  /*let textareaIndex = document.getElementById("add-item");
   textareaIndex.addEventListener("keypress", function (k) {
     if (k.key === "Enter") {
       let value = k.target.value;
@@ -34,7 +34,7 @@ function initializeCodeIndex() {
         k.target.value = "";
       });
     }
-  });
+  });*/
 
   // Search a recipe in a DB
   let bar = document.getElementById("search");

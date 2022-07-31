@@ -1,3 +1,0 @@
-# snippets-app
-
-in progress
