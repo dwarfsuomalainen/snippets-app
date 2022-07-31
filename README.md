@@ -17,8 +17,6 @@ Simple web application, which lets the authenticated users to post own code snip
 - [ ] OAuth login with Google, Facebook, and Github - in future versions
 
 
-## Used instruments 
-
 ## Implementation of backend with Node.js
 + Express framework
 
@@ -65,7 +63,7 @@ npm start
 
 
 
-ᓚᘏᗢ Now all set  go to <a href="http://localhost:1234/">http://localhost:1234/</a> URL and see your application up and running.
+ᓚᘏᗢ Now all set!  Start the app and go to <a href="http://localhost:1234/">http://localhost:1234/</a> URL and see your application up and running.
 
 ## License
 
