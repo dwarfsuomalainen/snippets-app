@@ -21,7 +21,7 @@ Simple web application, which lets the authenticated users to post own code snip
 + Express framework
 
 ## Utilization of database
-+ MongoDB
++ MongoDB 
 
 ## Authentication
 + Users are able to register and login
@@ -46,7 +46,8 @@ Edit a .env file in root folder
 ```
 SECRET = **Your secret phrase**
 ```
-
+## Mongo DB
++ Database set up at mongoDB = "mongodb://127.0.0.1:27017/testdb" (you can use your own set up, change the const in app.js)
 
 ## Setup Locally
 
