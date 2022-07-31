@@ -67,14 +67,14 @@ function renderPost(container, postData) {
 
   if (postData.ingredients.length) {
     const ingredients = document.createElement("p");
-    ingredients.innerText = "Ingredients: " + postData.ingredients.join(", ");
+    ingredients.innerText = "Snippet: " + postData.ingredients.join(", ");
     postCardDiv.appendChild(ingredients);
   }
 
   if (postData.instructions.length) {
     const instructions = document.createElement("p");
     instructions.innerText =
-      "Instructions: " + postData.instructions.join(", ");
+      "Text description: " + postData.instructions.join(", ");
     postCardDiv.appendChild(instructions);
   }
 
