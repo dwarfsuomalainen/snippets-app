@@ -155,7 +155,7 @@ router.post(
 
 router.get("/recipe/:id", (req, res, next) => {
   Recipes.find({ _id: req.params.id })
-    .populate(["createdBy", "comments.createdBy"])
+    .populate(["categories", "createdBy", "comments.createdBy"])
     .exec((err, name) => {
       if (err) return next(err);
       if (name.length > 0) {
@@ -184,7 +184,7 @@ router.get("/recipes/:page", (req, res, next) => {
     .sort({
       _id: "asc",
     })
-    .populate("categories")
+    .populate(["categories", "createdBy", "comments.createdBy"])
     .exec(function (err, recipes) {
       Recipes.count().exec(function (err, totalCount) {
         res.status(200).json({

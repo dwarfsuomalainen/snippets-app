@@ -90,5 +90,27 @@ function renderPost(container, postData) {
     postCardDiv.appendChild(imagesContainer);
   }
 
+  const commentsConatiner = document.createElement("div");
+  const commentsTitle = document.createElement("h5");
+  commentsTitle.innerText = "Comments";
+  commentsConatiner.appendChild(commentsTitle);
+
+  renderComments(commentsConatiner, postData.comments);
+  postCardDiv.appendChild(commentsConatiner);
+
   container.appendChild(postCardDiv);
+}
+
+function renderComments(container, comments) {
+  for (const comment of comments) {
+    renderComment(container, comment);
+  }
+}
+
+function renderComment(container, comment) {
+  const commentContainer = document.createElement("div");
+  commentContainer.innerText = `${comment.createdBy.email} on ${new Date(
+    comment.commentedOn
+  ).toLocaleString()} said: "${comment.commentBody}"`;
+  container.appendChild(commentContainer);
 }
