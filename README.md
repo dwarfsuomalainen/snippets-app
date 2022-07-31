@@ -48,6 +48,7 @@ SECRET = **Your secret phrase**
 ```
 ## Mongo DB
 + Database set up at mongoDB = "mongodb://127.0.0.1:27017/testdb" (you can use your own set up, change the const in app.js)
++ Categories for posts should be added to collection Categories manually (feature "tags" will arrive soon and will replace categorie's checkboxes)
 
 ## Setup Locally
 
