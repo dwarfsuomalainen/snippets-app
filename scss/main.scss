@@ -1,0 +1,53 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: pink;
+  }
+  
+  a {
+    color: #00B7FF;
+  }
+  
+  .hidden
+  {
+    display: none;
+  }
+  
+  .links
+  {
+    align-content: center;
+  }
+  
+  .createPost
+  {
+    text-align: center;
+    display: inline-block;
+  }
+  
+  a {
+    padding-left: 5px;
+  }
+  
+  /* some simple transitions to make the upvote and downvote
+  buttons fade in as a visual cue for the user */
+  
+  .glyphicon {
+    opacity: 1;
+    
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
+  }
+  
+  .glyphicon:hover {
+    opacity: 0.75;
+    cursor: pointer;
+  }
+  
+  .image-to-index {
+    border:1px solid black;
+    display:inline-block;
+    width: 400px;
+    height: 400px;
+    overflow:hidden;
+  }
