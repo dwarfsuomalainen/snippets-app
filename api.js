@@ -83,7 +83,7 @@ router.post("/user/login", upload.none(), (req, res, next) => {
           };
           let emailX = jwtPayload.email;
           console.log(jwtPayload.email);
-          jwt.sign(
+          try { jwt.sign(
             jwtPayload,
             process.env.SECRET,
             {
@@ -93,6 +93,9 @@ router.post("/user/login", upload.none(), (req, res, next) => {
               res.json({ success: true, token, emailX });
             }
           );
+          } catch(err) {
+            console.error('error signing jwt:', err);
+          }
         } else {
           return res.status(403).json({ message: "Login failed" });
         }
