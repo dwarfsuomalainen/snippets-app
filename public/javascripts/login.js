@@ -10,7 +10,7 @@ function initializeCodeLogin() {
   let form1 = document
     .getElementById("login-form")
     .addEventListener("submit", onSubmit);
-  //console.log(form1);
+  console.log(form1);
 }
 
 function onSubmit(event) {
