@@ -23,7 +23,7 @@ router.get("/private", validateToken, (req, res, next) => {
   res.json({ email });
 
   /*User.find({}, (err, users) =>{
-    if(err) return next(err);
+    if(err) return next(err);s
     res.render("users", {users});
   })*/
 });
@@ -81,18 +81,23 @@ router.post("/user/login", upload.none(), (req, res, next) => {
             id: email._id,
             email: email.email,
           };
+          console.log(jwtPayload);
           let emailX = jwtPayload.email;
           console.log(jwtPayload.email);
+          try {
           jwt.sign(
-            jwtPayload,
-            process.env.SECRET,
+            jwtPayload,process.env.SECRET,
             {
-              expiresIn: 120,
+              expiresIn: 240,
             },
             (err, token) => {
-              res.json({ success: true, token, emailX });
+
+              res.json({ success: true, token, emailX, message: "Logged in"});
             }
           );
+          } catch(err) {
+            console.error('error signing jwt:', err);
+          }
         } else {
           return res.status(403).json({ message: "Login failed" });
         }
