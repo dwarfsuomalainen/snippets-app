@@ -85,8 +85,9 @@ router.post("/user/login", upload.none(), (req, res, next) => {
           let emailX = jwtPayload.email;
           console.log(jwtPayload.email);
           try {
-          jwt.sign(
-            jwtPayload,process.env.SECRET,
+            jwt.sign(
+            jwtPayload,
+            process.env.SECRET,
             {
               expiresIn: 240,
             },
