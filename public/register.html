@@ -5,14 +5,14 @@
     
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="stylesheets/main.css"/>
+<link rel="stylesheet" href="stylesheets/style.css"/>
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <body>
-    <h1>Register here</h1>
+    <h1>Registration page</h1>
     <div id="error"></div>
     <form id="login-form" action="/api/user/register" method="post">
         <div class="container">
@@ -23,8 +23,7 @@
             <b>Password</b>
         </label>
         <input type="password" name="password" id="password"placeholder="Enter password" required>
-        <input type="Submit" class="btn" value="Register">
-        <input type="button"class="btn" onclick="location.href='/';" value="Back to Main page" />
+        <input type="Submit" value="Register">
         </div>
 
     </form>

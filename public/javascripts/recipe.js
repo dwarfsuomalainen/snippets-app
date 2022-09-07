@@ -98,7 +98,6 @@ function init() {
       let imgX = document.createElement("img");
       imgX.src = "/images/" + idFromSearch;
       dbToDiv.appendChild(imgX);
-      img.classList.add ("image-to-index");
     }
   }
 

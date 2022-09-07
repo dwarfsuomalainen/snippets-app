@@ -1,10 +1,9 @@
 {
-  "name": "snippet_app",
-  "version": "1.0.0",
+  "name": "week7",
+  "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "sass": "node-sass -w scss/ -o public/stylesheets/ --recursive"
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
@@ -19,10 +18,8 @@
     "mongoose": "^6.4.4",
     "morgan": "~1.9.1",
     "multer": "^1.4.5-lts.1",
-    "node-sass": "^7.0.1",
     "passport-jwt": "^4.0.0",
     "pug": "^3.0.2",
-    "sass": "^1.54.8",
     "vue": "^3.2.37"
   }
 }
