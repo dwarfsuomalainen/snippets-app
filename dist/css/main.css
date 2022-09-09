@@ -34,6 +34,24 @@ a {
 .image-to-index {
   border: 1px solid black;
   display: inline-block;
-  width: 400px;
-  height: 400px;
+  width: 40%;
+  height: 40%;
   overflow: hidden; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.image {
+  width: 120px;
+  height: 120px;
+  height: auto;
+  float: left;
+  margin: 3px;
+  padding: 3px; }
+
+.post {
+  background-color: #00B7FF; }
+
+.post-title {
+  color: aqua; }

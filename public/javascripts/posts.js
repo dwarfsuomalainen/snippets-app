@@ -50,7 +50,9 @@ function renderPosts(posts) {
 
 function renderPost(container, postData) {
   let postCardDiv = document.createElement("div");
+  postCardDiv.classList.add('post');
   let postTitle = document.createElement("h3");
+  postTitle.classList.add('post-title');
   const postTitleLink = document.createElement("a");
   postTitleLink.href = `/post.html?id=${postData._id}`;
   postTitleLink.innerText = postData.name || "Untitled Post";
@@ -84,6 +86,7 @@ function renderPost(container, postData) {
     for (image of postData.images) {
       const img = document.createElement("img");
       img.src = `/api/images/${image}`;
+      img.classList.add('image-to-index');
       imagesContainer.appendChild(img);
     }
 

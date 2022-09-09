@@ -96,6 +96,7 @@ function init() {
     let dbToDiv = document.getElementById("images");
     for (i = 0; i < idFromSearch.length; i++) {
       let imgX = document.createElement("img");
+      imgX.classList.add('image');
       imgX.src = "/images/" + idFromSearch;
       dbToDiv.appendChild(imgX);
     }

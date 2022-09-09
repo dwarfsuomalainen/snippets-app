@@ -1,7 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: rgb(243, 230, 232); }
+  background-color: rgba(255, 192, 203, 0.31); }
 
 a {
   color: #00B7FF; }
@@ -34,6 +34,94 @@ a {
 .image-to-index {
   border: 1px solid black;
   display: inline-block;
-  width: 400px;
-  height: 400px;
+  width: 40%;
+  height: 40%;
   overflow: hidden; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+.image {
+  width: 120px;
+  height: 120px;
+  height: auto;
+  float: left;
+  margin: 3px;
+  padding: 3px; }
+
+.post {
+  background-color: rgba(16, 190, 233, 0.132);
+  padding: 15px;
+  margin: 20px; }
+
+.post-title {
+  color: aqua; }
+
+.createPost {
+  background-color: rgba(16, 190, 233, 0.132);
+  padding: 15px;
+  margin: 20px;
+  border-radius: 3px; }
+
+.mainPageHeader {
+  background-color: rgba(16, 190, 233, 0.132);
+  padding: 15px;
+  margin: 20px;
+  border-radius: 3px; }
+
+.links {
+  background-color: rgba(16, 190, 233, 0.132);
+  padding: 15px;
+  margin: 20px;
+  border-radius: 3px; }
+
+.container {
+  background-color: rgba(16, 190, 233, 0.132);
+  padding: 15px;
+  margin: 20px;
+  border-radius: 3px; }
+
+#buttonLogout {
+  background-color: rgba(16, 190, 233, 0.132);
+  padding: 15px;
+  margin: 20px;
+  border-radius: 3px; }
+
+#displayEmail {
+  background-color: rgba(16, 190, 233, 0.132);
+  padding: 15px;
+  margin: 20px;
+  border-radius: 3px; }
+
+.post {
+  background-color: rgba(16, 190, 233, 0.132);
+  padding: 15px;
+  margin: 20px;
+  border-radius: 3px; }
+
+.comments-container {
+  background-color: rgba(16, 190, 233, 0.132);
+  padding: 15px;
+  margin: 20px;
+  border-radius: 3px; }
+
+#comment-form {
+  background-color: rgba(16, 190, 233, 0.132);
+  padding: 15px;
+  margin: 20px;
+  border-radius: 3px; }
+
+.postcard {
+  background-color: rgba(16, 190, 233, 0.132);
+  padding: 15px;
+  margin: 20px;
+  border-radius: 3px; }
+
+  #error  {
+    margin: auto;
+    width: 70%;
+    border-radius: 5px;
+    background-color: rgba(192, 20, 66, 0.132);
+    padding: 20px;
+    }

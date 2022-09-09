@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o public/stylesheets/ --recursive"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",

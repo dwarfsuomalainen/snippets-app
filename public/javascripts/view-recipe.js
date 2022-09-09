@@ -54,7 +54,9 @@ function submitComment(event) {
 function renderPost(container, postData) {
   container.innerHTML = "";
   let postCardDiv = document.createElement("div");
+  postCardDiv.classList.add('postcard');
   let postTitle = document.createElement("h3");
+  postTitle.classList.add('postcard');
   postTitle.innerText = postData.name || "Untitled Post";
   postCardDiv.appendChild(postTitle);
 
@@ -68,14 +70,16 @@ function renderPost(container, postData) {
 
   if (postData.ingredients.length) {
     const ingredients = document.createElement("p");
-    ingredients.innerText = "Ingredients: " + postData.ingredients.join(", ");
+    ingredients.classList.add('postcard');
+    ingredients.innerText = "Code snippet:     " + postData.ingredients.join(", ");
     postCardDiv.appendChild(ingredients);
   }
 
   if (postData.instructions.length) {
     const instructions = document.createElement("p");
+    instructions.classList.add('postcard');
     instructions.innerText =
-      "Instructions: " + postData.instructions.join(", ");
+      "Descriptions of issue:      " + postData.instructions.join(", ");
     postCardDiv.appendChild(instructions);
   }
 
@@ -85,6 +89,7 @@ function renderPost(container, postData) {
     for (image of postData.images) {
       const img = document.createElement("img");
       img.src = `/api/images/${image}`;
+      img.classList.add('image-to-index');
       imagesContainer.appendChild(img);
     }
 
