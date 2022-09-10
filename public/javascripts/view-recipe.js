@@ -49,6 +49,8 @@ function submitComment(event) {
   }).then(() => {
     loadPost();
   });
+  let commentEmpty = document.getElementById("comment");
+  commentEmpty.value = "";
 }
 
 function renderPost(container, postData) {

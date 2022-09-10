@@ -51,7 +51,7 @@ function renderPosts(posts) {
 function renderPost(container, postData) {
   let postCardDiv = document.createElement("div");
   postCardDiv.classList.add('post');
-  let postTitle = document.createElement("h3");
+  let postTitle = document.createElement("div");
   postTitle.classList.add('post-title');
   const postTitleLink = document.createElement("a");
   postTitleLink.href = `/post.html?id=${postData._id}`;
@@ -60,7 +60,8 @@ function renderPost(container, postData) {
   postCardDiv.appendChild(postTitle);
 
   if (postData.categories.length) {
-    const categories = document.createElement("p");
+    const categories = document.createElement("div");
+    categories.classList.add('categories');
     categories.innerText =
       "Categories: " +
       postData.categories.map((category) => category.name).join(", ");
@@ -69,12 +70,14 @@ function renderPost(container, postData) {
 
   if (postData.ingredients.length) {
     const ingredients = document.createElement("p");
+    ingredients.classList.add('ingredients');
     ingredients.innerText = "Snippet: " + postData.ingredients.join(", ");
     postCardDiv.appendChild(ingredients);
   }
 
   if (postData.instructions.length) {
     const instructions = document.createElement("p");
+    instructions.classList.add('instructions');
     instructions.innerText =
       "Text description: " + postData.instructions.join(", ");
     postCardDiv.appendChild(instructions);
@@ -94,6 +97,7 @@ function renderPost(container, postData) {
   }
 
   const commentsConatiner = document.createElement("div");
+  commentsConatiner.classList.add('commentsConatiner');
   const commentsTitle = document.createElement("h5");
   commentsTitle.innerText = "Comments";
   commentsConatiner.appendChild(commentsTitle);
@@ -112,8 +116,9 @@ function renderComments(container, comments) {
 
 function renderComment(container, comment) {
   const commentContainer = document.createElement("div");
+  commentContainer.classList.add('commentContainer');
   commentContainer.innerText = `${comment.createdBy.email} on ${new Date(
     comment.commentedOn
-  ).toLocaleString()} said: "${comment.commentBody}"`;
+  ).toLocaleString()} commented: \n ${comment.commentBody}`;
   container.appendChild(commentContainer);
 }

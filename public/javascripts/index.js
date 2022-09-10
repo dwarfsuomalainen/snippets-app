@@ -71,7 +71,7 @@ function initializeCodeIndex() {
         let bbb = document.getElementById("buttonLogout");
         bbb.classList.remove("hidden");
         let ddd = document.getElementById("displayEmail");
-        ddd.innerText = "Registered user : " + data.email + " User ID :";
+        ddd.innerText = "Registered user : " + data.email +"\n"+ " User ID : "+ data.email +"\n"+"  To comment any posts, click title of the post you wish to comment";
         // listOfItems();
       } else {
         window.localStorage.removeItem("auth_token");

@@ -13,15 +13,17 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <body>
     <div class="createPost">
+      <h4>Title of your post</h4>
       <input
         type="text"
         id="name-text"
         name="name"
-        placeholder="Enter title of your post"
-      />
-      <label for="name-text">New post title</label>
-      <h4>Your code snippet</h4>
+        placeholder="Enter title of your post">
+      <label for="name-text">
+      </label>
+      
       <div class="row">
+        <h4>Your code snippet</h4>
         <form class="col s12">
           <div class="row">
             <div class="input-field col s12" id="addIng">
@@ -32,7 +34,7 @@
                 class="materialize-textarea"
                 data-length="10000"
               ></textarea>
-              <label for="ingredients-text"> Enter code snippet</label>
+              <label for="ingredients-text"> Enter your code snippet here </label>
             </div>
           </div>
         </form>
@@ -40,8 +42,9 @@
           Save snippet
         </button>
       </div>
-      <h4>Describe your issue or solution</h4>
+      
       <div class="row">
+        <h4>Describe your issue or solution</h4>
         <form class="col s12">
           <div class="row">
             <div class="input-field col s12" id="addInst">
@@ -52,12 +55,12 @@
                 class="materialize-textarea"
                 data-length="100000"
               ></textarea>
-              <label for="instructions-text">Enter your message</label>
+              <label for="instructions-text">Describe your isue or solution</label>
             </div>
           </div>
         </form>
         <button class="btn" id="add-instruction" type="button">
-          Save message
+          Save description
         </button>
       </div>
 
@@ -85,7 +88,8 @@
       </div>
       <br />
       <div id="chkDiv" class="checkboxes">
-        <label for="catForm ">Categories</label>
+        <h4>Choose categories</h4>
+        <label for="catForm "></label>
         <form id="catForm" name="Categories"></form>
       </div>
       <br /><br /><br />

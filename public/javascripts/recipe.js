@@ -199,10 +199,13 @@ function init() {
         categories = [];
         imagesArr = [];
         uncheck();
+
+
       });
     // this function clears the checkboxes on Submit
     function uncheck() {
       let box = document.querySelectorAll(".checkbox");
+      
       console.log(box);
       for (let i = 0; i < box.length; i++) {
         if (box[i].checked == true) {
