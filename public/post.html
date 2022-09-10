@@ -14,15 +14,15 @@
   <body>
     <div id="post"></div>
     <div class="comments-container">
-      <h5>Comments</h5>
+      <div class = "comments-title">Comments</div> 
       <div class="comments" id="comments"></div>
     </div>
     <div>
       
-      <div class="row">
+      <div>
         <form id="comment-form" class="col s12">
           <h4>Leave a comment</h4>
-          <div class="row">
+          <div>
             <div class="input-field col s12">
               <textarea
                 id="comment"
@@ -30,6 +30,7 @@
                 class="ins-newline0"
                 class="materialize-textarea"
                 data-length="100000"
+                oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'
               ></textarea>
               <label for="comment">Enter your comment here</label>
             </div>

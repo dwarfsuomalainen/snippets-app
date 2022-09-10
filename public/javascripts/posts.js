@@ -63,7 +63,7 @@ function renderPost(container, postData) {
     const categories = document.createElement("div");
     categories.classList.add('categories');
     categories.innerText =
-      "Categories: " +
+      "Categories: \n" +
       postData.categories.map((category) => category.name).join(", ");
     postCardDiv.appendChild(categories);
   }
@@ -71,7 +71,7 @@ function renderPost(container, postData) {
   if (postData.ingredients.length) {
     const ingredients = document.createElement("p");
     ingredients.classList.add('ingredients');
-    ingredients.innerText = "Snippet: " + postData.ingredients.join(", ");
+    ingredients.innerText = "Snippet:  \n" + postData.ingredients.join(", ");
     postCardDiv.appendChild(ingredients);
   }
 
@@ -79,7 +79,7 @@ function renderPost(container, postData) {
     const instructions = document.createElement("p");
     instructions.classList.add('instructions');
     instructions.innerText =
-      "Text description: " + postData.instructions.join(", ");
+      "Description: \n" + postData.instructions.join(", ");
     postCardDiv.appendChild(instructions);
   }
 
@@ -98,8 +98,9 @@ function renderPost(container, postData) {
 
   const commentsConatiner = document.createElement("div");
   commentsConatiner.classList.add('commentsConatiner');
-  const commentsTitle = document.createElement("h5");
+  const commentsTitle = document.createElement("div");
   commentsTitle.innerText = "Comments";
+  commentsTitle.classList.add('comments-title')
   commentsConatiner.appendChild(commentsTitle);
 
   renderComments(commentsConatiner, postData.comments);

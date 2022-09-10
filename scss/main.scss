@@ -9,6 +9,7 @@ body {
   
   a {
     color:magenta;
+    text-decoration: none;
   }
   
   .hidden
@@ -29,6 +30,14 @@ body {
   
   a {
     padding-left: 5px;
+  }
+
+  a:hover {
+    background-color: palevioletred;
+    border-radius: 5px;
+    opacity: 0.75;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
   }
   
   /* some simple transitions to make the upvote and downvote
@@ -82,10 +91,10 @@ body {
 
 .post-title {
   font-size: 30px;
-  background-color: rgba(233, 16, 175, 0.132); 
+  background-color: rgba(233, 16, 175, 0.278); 
   padding: 15px;
   margin: 20px;
-
+  border-radius: 3px;
 }
 
 
@@ -98,10 +107,17 @@ body {
 }
 
 .mainPageHeader {
-  background-color: rgba(16, 190, 233, 0.132); 
+  background-color: rgba(16, 67, 233, 0.132); 
   padding: 15px;
   margin: 20px;
   border-radius: 3px;
+}
+.mainPageHeader:hover {
+  opacity: 0.75;
+  cursor: pointer;
+  color: bisque;
+  transition: all 0.5s ease-out;
+
 }
 
 .links {
@@ -139,14 +155,14 @@ body {
 
 
 .comments-container {
-  background-color: rgba(16, 190, 233, 0.132); 
+  background-color: rgba(16, 190, 233, 0.277); 
   padding: 15px;
   margin: 20px;
   border-radius: 3px;
 }
 
 #comment-form {
-  background-color: rgba(16, 190, 233, 0.132); 
+  background-color: rgba(16, 190, 233, 0.277); 
   padding: 15px;
   margin: 20px;
   border-radius: 3px;
@@ -154,7 +170,7 @@ body {
 
 
 .postcard {
-  background-color: rgba(16, 190, 233, 0.132); 
+  background-color: rgba(16, 233, 85, 0.132); 
   padding: 15px;
   margin: 20px;
   border-radius: 3px;
@@ -193,9 +209,7 @@ body {
 }
 
 .commentsConatiner {
-
-  
-  background-color: rgba(16, 67, 233, 0.132); 
+  background-color: rgba(16, 233, 85, 0.132); 
   padding: 15px;
   margin: 20px;
   border-radius: 3px;
@@ -205,8 +219,7 @@ body {
 .commentContainer {
 
   background-color: rgba(49, 16, 233, 0.132); 
-  
-  width: 60%;
+  //width: 60%;
   padding: 3px;
   margin: 10px;
   border-radius: 3px;
@@ -236,6 +249,24 @@ body {
 }
 
 .file-field-input {
+  background-color: rgba(233, 16, 175, 0.132); 
+  border-radius: 3px;
+  padding: 15px;
+}
+
+.comments {
+
+  background-color: rgba(49, 16, 233, 0.132); 
+  
+  width: 60%;
+  padding: 3px;
+  margin: 10px;
+  border-radius: 3px;
+
+}
+
+.comments-title {
+
   background-color: rgba(233, 16, 175, 0.132); 
   border-radius: 3px;
   padding: 15px;

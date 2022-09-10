@@ -56,9 +56,9 @@ function submitComment(event) {
 function renderPost(container, postData) {
   container.innerHTML = "";
   let postCardDiv = document.createElement("div");
-  postCardDiv.classList.add('postcard');
+  //postCardDiv.classList.add('row');
   let postTitle = document.createElement("h3");
-  postTitle.classList.add('postcard');
+  postTitle.classList.add('post-title');
   postTitle.innerText = postData.name || "Untitled Post";
   postCardDiv.appendChild(postTitle);
 
@@ -110,6 +110,7 @@ function renderComments(container, comments) {
 
 function renderComment(container, comment) {
   const commentContainer = document.createElement("div");
+  commentContainer.classList.add('commentContainer')
   commentContainer.innerText = `${comment.createdBy.email} on ${new Date(
     comment.commentedOn
   ).toLocaleString()} said: "${comment.commentBody}"`;
