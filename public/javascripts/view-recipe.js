@@ -91,7 +91,7 @@ function renderPost(container, postData) {
     for (image of postData.images) {
       const img = document.createElement("img");
       img.src = `/api/images/${image}`;
-      img.classList.add('image-to-index');
+      img.classList.add('image-to-post');
       imagesContainer.appendChild(img);
     }
 
