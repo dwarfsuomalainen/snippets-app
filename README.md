@@ -77,3 +77,4 @@ npm start
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
+![snippets](https://user-images.githubusercontent.com/73884598/189601952-c238654b-5e14-4433-8390-a48be3d3bd76.jpg) ![snippets2](https://user-images.githubusercontent.com/73884598/189602456-9163130c-4f72-4443-a7c3-d7113a269b36.jpg)
