@@ -1,4 +1,4 @@
-# Snippets Webapp
+# SnippetApp
 
 Simple web application, which lets the authenticated users to post own code snippets and comment other posts. 
 
