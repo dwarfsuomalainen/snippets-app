@@ -14,11 +14,13 @@
 <body>
     
     <div id="error"></div>
+    
     <form id="login-form" action="/api/user/register" method="post">
         
         <div class="container">
+        <div class="row">
         <h1>Register here</h1>
-        <label for="email"><b>Email</b> </label>
+         <label for="email"><b>Email</b> </label>
         
         
         <input type="email" placeholder="Enter email" name="email" required>
@@ -26,8 +28,11 @@
         <label for="password">
             <b>Password</b>
         </label>
+    
         <input type="password" name="password" id="password"placeholder="Enter password" required>
-        <input type="Submit" class="btn" value="Register">
+        
+    </div>
+        <button class="btn waves-effect waves-light" id="submit" type="submit">Register<i class="material-icons right"></i></button>
         <input type="button"class="btn" onclick="location.href='/';" value="Back to Main page" />
         </div>
 

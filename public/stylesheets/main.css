@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: rgba(255, 192, 203, 0.31); }
+  background-blend-mode: color-burn; }
 
 a {
   padding: 1rem; }
@@ -69,7 +69,7 @@ img {
   border-radius: 3px; }
 
 .createPost {
-  background-color: rgba(16, 190, 233, 0.132);
+  background-color: rgba(16, 190, 233, 0.252);
   padding: 15px;
   margin: 20px;
   border-radius: 3px;
@@ -94,7 +94,7 @@ img {
   border-radius: 3px; }
 
 .container {
-  background-color: rgba(16, 190, 233, 0.132);
+  background-color: rgba(16, 190, 233, 0.578);
   padding: 15px;
   margin: 20px;
   border-radius: 3px; }
@@ -112,7 +112,7 @@ img {
   border-radius: 3px; }
 
 .post {
-  background-color: rgba(16, 190, 233, 0.132);
+  background-color: rgba(16, 190, 233, 0.376);
   padding: 15px;
   margin: 20px;
   border-radius: 3px; }
@@ -173,15 +173,32 @@ img {
   border-radius: 3px; }
 
 .checkboxes {
-  background-color: rgba(233, 16, 175, 0.132);
+  background-color: rgba(233, 16, 175, 0.133);
+  color: black;
   text-align: center;
   padding: 3px;
   margin: 10px;
   border-radius: 3px; }
 
-.row {
+.checkbox {
   background-color: rgba(233, 16, 175, 0.132);
+  text-align: center;
+  padding: 3px;
+  margin: 10px;
+  border-radius: 3px; }
+  .checkbox:hover {
+    color: yellowgreen;
+    transition: all 0.5s ease; }
+
+.row {
+  background-color: rgba(233, 16, 175, 0.419);
   padding: 15px;
+  margin: 10px;
+  border-radius: 3px; }
+
+.row-create {
+  background-color: rgba(233, 16, 175, 0.329);
+  padding: 10px;
   margin: 20px;
   border-radius: 3px; }
 
@@ -227,3 +244,19 @@ img {
     .icons a:hover {
       color: magenta;
       transition: all 0.5s ease; }
+
+.materialize-textarea::placeholder {
+  position: absolute;
+  left: 20px;
+  margin: 5px;
+  top: 0px;
+  background-color: white;
+  padding: 0 20px; }
+
+.animate__animated animate__bounce {
+  display: inline-block;
+  margin: 0 0.5rem;
+  animation: bounce;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+  /* don't forget to set a duration! */ }

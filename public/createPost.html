@@ -13,7 +13,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <body>
     <div class="createPost">
-      <h4>Title of your post</h4>
+      
+      <div class="row-create">
+        <h4>Title of your post</h4>
       <input
         type="text"
         id="name-text"
@@ -21,11 +23,10 @@
         placeholder="Enter title of your post">
       <label for="name-text">
       </label>
-      
-      <div class="row">
+    </div>
+      <div class="row-create">
         <h4>Your code snippet</h4>
         <form class="col s12">
-          <div class="row">
             <div class="input-field col s12" id="addIng">
               <textarea
                 id="ingredients-text"
@@ -37,17 +38,15 @@
               ></textarea>
               <label for="ingredients-text"> Enter your code snippet here </label>
             </div>
-          </div>
         </form>
         <button class="btn" id="add-ingredient" type="button">
           Save snippet
         </button>
       </div>
       
-      <div class="row">
+      <div class="row-create">
         <h4>Describe your issue or solution</h4>
         <form class="col s12">
-          <div class="row">
             <div class="input-field col s12" id="addInst">
               <textarea
                 id="instructions-text"
@@ -59,16 +58,16 @@
               ></textarea>
               <label for="instructions-text">Describe your isue or solution</label>
             </div>
-          </div>
         </form>
         <button class="btn" id="add-instruction" type="button">
           Save description
         </button>
       </div>
-
-      <div class="file-field-input">
+      <div class="row-create">
         <h4>Add a screenshot</h4>
-        <label for="camera-file-input"></label><br /><br /><br />
+      <div class="file-field-input">
+        
+        <label for="camera-file-input"></label>
         <div class="btn">
           <form
             action="/images/"
@@ -83,20 +82,25 @@
                 accept="image/png, image/jpeg"
                 multiple
                 name="camera-file-input"
-              />
+              /></div>
             </label>
           </form>
         </div>
       </div>
       <br />
-      <div id="chkDiv" class="checkboxes">
+      <div class="row">
         <h4>Choose categories</h4>
+            <div id="chkDiv" class="checkboxes">
+        
         <label for="catForm "></label>
         <form id="catForm" name="Categories"></form>
       </div>
-      <br /><br /><br />
-      <button class="btn" id="submit" type="submit">Submit</button>
+    </div>
+      <br />
+      <button class="btn waves-effect waves-light" id="submit" type="submit">Submit<i class="material-icons right"></i></button>
+
       <input type="button"class="btn" onclick="location.href='/';" value="Cancel" />
+      
     </div>
   </body>
   <script src="./javascripts/recipe.js"></script>

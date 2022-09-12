@@ -14,8 +14,10 @@
 <body>
     
     <div id="error" ></div>
+
     <form id="login-form" action="" method="post">
         <div class="container">
+            <div class="row">
             <h1>Log in here</h1>
         <label for="email"> <b>Email</b></label>
         
@@ -24,9 +26,10 @@
             <b>Password</b>
         </label>
         <input type="password" name="password" id="password"placeholder="Enter password" required>
-        <input type="Submit" class="btn" value="Log in">
+        <button class="btn waves-effect waves-light" id="submit" type="submit">Log in<i class="material-icons right"></i></button>
         <input type="button"class="btn" onclick="location.href='/';" value="Back to Main page" />
-        </div>
+       </div> 
+    </div>
 
     </form>
 <script type="text/javascript" src="javascripts/login.js"></script>
